@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ========================Page Header============================ */
+@media screen and (min-width: 935px){
+body{
+    background-color: #eee;
+    overflow-x: hidden;
+}
+#header{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+    border-bottom: 1px groove rgba(0, 0, 0, 0.3);
+}
+.container-header-items, .container-stories{
+    display: flex;
+    align-items: center;
+}
+#logo1-header{
+    position: absolute;
+    left: 17%;
+    width: 2vw;
+    height: 4vh;
+}
+#logo1-header > img, #logo2-header > img{
+    width: 100%;
+    height: 100%;
+}
+#logo2-header{
+    position: absolute;
+    left: 20%;
+    width: 8vw;
+    height: 4vh;
+}
+#search-box-header{
+    width: 14vw;
+    position: absolute;
+    left: 43%;
+    display: flex;
+}
+#search-box-header > input{
+    width: 100%;
+    height: 100%;
+    border: 1px groove;
+    border-radius: 5%;
+    background-color: #ddd;
+    padding: 3%;
+}
+#header-icons{
+    position: absolute;
+    right: 17%;
+}
+
+/* =======================Page Publications============================= */
+    .main-container{
+        width: 100%;
+        margin-top: 5.6%;
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        /*background-color: blue;*/
+    }
+    .container-body{
+        width: 43%;
+        /*background-color: red;*/
+        margin-left: 17%;
+    }
+    .container-stories{
+        width: 99.6%;
+        background-color: #fff;
+        border: 1px groove rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+    .stories{
+        width: 6vw;
+        height: 12vh;
+        margin: 2%;
+        /*background-color: #abf;*/
+        position: relative;
+        text-align: center;
+    }
+    .story-single{
+        width: 4.5vw;
+        height: 9vh;
+        border-radius: 50%;
+        padding: 3%;
+        background-image: linear-gradient(to bottom right, red, blue);
+    }
+    .story-single > img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    #next{
+        position: absolute;
+        right: 1.5%;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px groove;
+        box-shadow: 1px black;
+    }
+    .main-container-publications{
+        border: 1px groove rgba(0, 0, 0, 0.3);
+        margin-top: 6%;
+    }
+    .publications{
+        width:100%;
+        height: 70vh;
+    }
+    .publications > img, .video{
+        width: 100%;
+        height: 100%;
+    }
+    .publicator, .bottom-publicator{
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .reactions{
+        padding: 2%;
+    }
+    .liked-by{
+        display:flex;
+    }
+    .liker-profile{
+        width: 1.5vw;
+        height: 3vh;
+    }
+    .other-likers > span{
+        font-weight: bold;
+    }
+    .publication-plus{
+        position: absolute;
+        right: 2%;
+        top: 40%;
+        background-color: rgba(255, 0 , 0, 0);
+    }
+    .profile{
+        padding: 2%;
+        width: 2.25vw;
+        height: 4.5vh;
+    }
+    .profile > img, .sidebar-profile-picture > img, .liker-profile > img, .sidebar-suggestion-profile-picture > img{
+        width:100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+/* ========================Page Sidebar============================ */
+    .container-sidebar{
+        width: 22%;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 11.5vh;
+        right: 17%;
+    }
+    .sidebar-profilename{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    .sidebar-username{
+        font-weight: bold;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .sidebar-profile{
+        width:100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .sidebar-profile-picture{
+        margin: 2%;
+        width: 4vw;
+        height: 8vh;
+    }
+    .container-suggestions-title{
+        display: flex; 
+        width: 100%; 
+        position: relative;
+    }
+    .suggestions-title{
+        font-size: 15px; 
+        color: rgba(0, 0, 0, 0.5)
+    }
+    .suggestion-lateral-button, .suggestion-follow{
+        position: absolute; 
+        right: 0; 
+        font-weight: bold; 
+        font-size: 15px;
+    }
+    .suggestion-follow{
+        color: rgba(0, 0, 255, 0.7);
+    }
+    .sidebar-suggestion-profile-picture{
+        margin: 2%;
+        width: 2.5vw;
+        height: 5vh;
+    }
+    .container-sidebar-suggestions{
+        margin-top: 2%;
+        width: 100%;
+        background-color: rgba(46, 46, 46, 0);
+    }
+    .sidebar-suggestions{
+        display: flex;
+        align-items: center;
+    }
+    .container-sidebar-plus{
+        width: 100%;
+        margin-top: 2vh;
+        font-size: 15px;
+        /*background-color: rgba(100, 100, 100, 1);*/
+    }
+    .sidebar-plus-copy{
+        margin-top: 2vh;
+    }
+    .sidebar-plus, .sidebar-plus-copy, a, a:hover, a:visited, a:active{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .footer{
+        display: none;
+    }
+}
